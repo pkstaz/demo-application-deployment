@@ -1,0 +1,29 @@
+apiVersion: capabilities.3scale.net/v1beta1
+kind: Product
+metadata:
+  name: api-rest-camel
+  namespace: rhi-3scale
+spec:
+  backendUsages:
+    camelkrestbackend:
+      path: /rest
+  applicationPlans:
+    ilimitado:
+      name: Ilimitado
+      state: publish
+  mappingRules:
+    - httpMethod: GET
+      increment: 1
+      metricMethodRef: hello
+      pattern: /rest/hello
+  methods:
+    hello:
+      description: Hello World Example
+      friendlyName: Camel-K Rest
+  metrics:
+    hits:
+      description: Number of API hits
+      friendlyName: Hits
+      unit: hit
+  name: API Camel Rest Example
+  systemName: apicamelkrestexample

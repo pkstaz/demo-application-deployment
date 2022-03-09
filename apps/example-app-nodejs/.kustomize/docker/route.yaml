@@ -1,0 +1,18 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: example-app-nodejs-docker
+  namespace: demo-application-deployment
+spec:
+  host: example-app-nodejs-docker-demo-application-deployment.apps.cluster-5333.5333.sandbox907.opentlc.com
+  port:
+    targetPort: 8080-tcp
+  to:
+    kind: Service
+    name: example-app-nodejs-docker
+    weight: 100
+  wildcardPolicy: None
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Allow
+status: {}

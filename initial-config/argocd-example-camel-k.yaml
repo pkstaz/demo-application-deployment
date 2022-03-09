@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: example-camel-k
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: camel-k-example
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    path: apps/camel-k/.kustomize
+    repoURL: 'https://github.com/pkstaz/demo-application-deployment.git'
+    targetRevision: develop
+
+    kustomize: {}
