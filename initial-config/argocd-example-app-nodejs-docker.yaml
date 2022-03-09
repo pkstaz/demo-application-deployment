@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: example-app-nodejs-docker
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: demo-application-deployment
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    path: apps/example-app-nodejs/.kustomize/docker
+    repoURL: 'https://github.com/pkstaz/demo-application-deployment.git'
+    targetRevision: develop
+
+    kustomize: {}

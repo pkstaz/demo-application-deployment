@@ -1,0 +1,14 @@
+{
+  "name": "example-app-nodejs",
+  "version": "1.0.0",
+  "description": "example for a demo of application deployment",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "cestay@redhat.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}

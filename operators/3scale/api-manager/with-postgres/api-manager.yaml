@@ -1,0 +1,14 @@
+apiVersion: apps.3scale.net/v1alpha1
+kind: APIManager
+metadata:
+  annotations:
+    apps.3scale.net/apimanager-threescale-version: '2.11'
+    apps.3scale.net/threescale-operator-version: 0.8.1
+    generation: 2
+  name: cluster-apimanager-with-postgres
+  namespace: rhi-3scale
+spec:
+  wildcardDomain: apps.cluster-lp2t2.lp2t2.sandbox1505.opentlc.com
+  system:
+    database:
+      postgresql: {}

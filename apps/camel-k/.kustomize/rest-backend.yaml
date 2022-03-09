@@ -1,0 +1,24 @@
+apiVersion: capabilities.3scale.net/v1beta1
+kind: Backend
+metadata:
+  name: rest-backend
+  namespace: rhi-3scale
+spec:
+  systemName: camelkrestbackend
+  name: Camel K Rest Backend
+  privateBaseURL: 'http://rest-integration.camel-k-example'
+  methods:
+    hello:
+      friendlyName: Hello World
+      description: hello method
+  mappingRules:
+    - httpMethod: GET
+      increment: 1
+      last: false
+      metricMethodRef: hello
+      pattern: /hello
+  metrics:
+    hits:
+      description: Number of API hits
+      friendlyName: Hits
+      unit: "hit"
