@@ -27,7 +27,7 @@ spec:
       containers:
         - name: example-app-nodejs-docker
           image: >-
-            cestay/example-app-nodejs:latest
+            cestay/example-app-nodejs:0.0.0.1
           ports:
             - containerPort: 8080
               protocol: TCP
