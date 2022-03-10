@@ -27,7 +27,7 @@ spec:
       containers:
         - name: example-app-nodejs-quay
           image: >-
-            quay.io/cestayg/example-app-nodejs:0.0.0.1
+            quay.io/cestayg/example-app-nodejs:latest
           ports:
             - containerPort: 8080
               protocol: TCP
