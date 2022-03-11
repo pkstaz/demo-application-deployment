@@ -10,7 +10,7 @@ spec:
   applicationPlans:
     ilimitado:
       name: Ilimitado
-      publish: true
+      published: true
   mappingRules:
     - httpMethod: GET
       increment: 1
