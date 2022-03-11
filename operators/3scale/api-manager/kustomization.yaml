@@ -1,6 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- system-storage.yaml
+- system-storage-pvc.yaml
 - secret.yaml
 - apimanager.yaml
