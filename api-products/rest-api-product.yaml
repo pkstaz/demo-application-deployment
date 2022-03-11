@@ -10,7 +10,6 @@ spec:
   applicationPlans:
     ilimitado:
       name: Ilimitado
-      state: publish
   mappingRules:
     - httpMethod: GET
       increment: 1
