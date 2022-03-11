@@ -1,0 +1,12 @@
+apiVersion: apps.3scale.net/v1alpha1
+kind: APIManager
+metadata:
+  name: 3scale
+  namespace: rhi-3scale
+spec:
+  # Dont forget changed this!!!!
+  wildcardDomain: apps.cluster-rflkz.rflkz.sandbox998.opentlc.com
+  ###
+  resourceRequirementsEnabled: false
+  monitoring:
+    enabled: true
