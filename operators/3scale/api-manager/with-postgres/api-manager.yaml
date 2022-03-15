@@ -4,7 +4,7 @@ metadata:
   annotations:
     apps.3scale.net/apimanager-threescale-version: '2.11'
     apps.3scale.net/threescale-operator-version: 0.8.1
-    generation: 2
+  generation: 2
   name: cluster-apimanager-with-postgres
   namespace: rhi-3scale
 spec:

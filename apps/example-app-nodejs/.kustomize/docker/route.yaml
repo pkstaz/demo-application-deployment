@@ -4,7 +4,7 @@ metadata:
   name: example-app-nodejs-docker
   namespace: demo-application-deployment
 spec:
-  host: example-app-nodejs-docker-demo-application-deployment.apps.cluster-5333.5333.sandbox907.opentlc.com
+  host: example-app-nodejs-docker-demo-application-deployment.apps.cluster-rflkz.rflkz.sandbox998.opentlc.com
   port:
     targetPort: 8080-tcp
   to:

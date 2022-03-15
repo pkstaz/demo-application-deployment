@@ -18,7 +18,6 @@ spec:
       app: example-app-nodejs-quay
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: example-app-nodejs-quay
         deploymentconfig: example-app-nodejs-quay

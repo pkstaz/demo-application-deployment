@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: api-manager
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: rhi-3scale
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    path: operators/3scale/api-manager
+    repoURL: 'https://github.com/pkstaz/demo-application-deployment.git'
+    targetRevision: develop
+
+    kustomize: {}

@@ -11,9 +11,3 @@
     ```bash
     oc apply -f ./initial-config
     ```
-
-
-
-
-
-
