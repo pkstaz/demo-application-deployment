@@ -1,26 +1,33 @@
 package com.pkstaz;
 
-import java.util.List;
-
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
+import javax.ws.rs.QueryParam;
+import javax.ws.rs.core.Response;
+import javax.ws.rs.Consumes;
 
+import org.jboss.resteasy.annotations.jaxrs.PathParam;
+
+import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 import io.quarkus.hibernate.orm.panache.PanacheQuery;
 import io.quarkus.panache.common.Page;
-
 @Path("/recursos/v1/carpeta.tributaria/{id}/actividades_economicas/")
+@Produces("application/json")
+@Consumes("application/json")
 public class ActividadEconomicaResource {
 
     @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public List<ActividadEconomica> ActividadEconomica() {
+    public Response ActividadEconomica(@PathParam("id") Integer id, @QueryParam("limit") Integer limit, @QueryParam("page") Integer page) {
 
-        System.out.println();
-        //Page.of(X, Y) X = Page; Y = Rows
-        PanacheQuery<ActividadEconomica> actEconomica = ActividadEconomica.findAll().page(Page.of(1, 1));
+        PanacheQuery<PanacheEntityBase> actEconomica;
 
-        return actEconomica.list();
+        if(null != page && null != limit){
+            actEconomica = ActividadEconomica.findAll().page(Page.of(page, limit));
+        }else{
+            actEconomica = ActividadEconomica.findAll();
+        }
+
+        return Response.ok(actEconomica.list()).status(200).build();
     }
 }

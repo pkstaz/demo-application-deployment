@@ -20,4 +20,15 @@ public class ActividadEconomica extends PanacheEntity{
 
     @Column(name="act_descripcion")
     public String descripcion;
+
+
+    public ActividadEconomica() {
+    }
+
+    public ActividadEconomica(String codigo, String descripcion, Integer rut, String dv) {
+        this.codigo = codigo;
+        this.descripcion = descripcion;
+        this.rut = rut;
+        this.dv = dv;
+    }
 }

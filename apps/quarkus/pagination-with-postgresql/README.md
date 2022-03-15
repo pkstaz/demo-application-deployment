@@ -54,3 +54,14 @@ If you want to learn more about building native executables, please consult http
 Easily start your RESTful Web Services
 
 [Related guide section...](https://quarkus.io/guides/getting-started#the-jax-rs-resources)
+
+
+## Run Postgres in Localhost
+
+```
+podman pull postgres
+```
+
+```
+podman run --name myPostgresDb -p 5432:5432 -e POSTGRES_USER=postgresql -e POSTGRES_PASSWORD=redhat -e POSTGRES_DB=postgresdb -d postgres
+```
