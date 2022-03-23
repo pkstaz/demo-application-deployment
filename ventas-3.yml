@@ -7,7 +7,6 @@ servers:
 - url: ventas.tarjeta-copec-poc.svc.cluster.local
 security:
 - api_key: []
-- basicAuth: []
 tags:
 - name: Tipo
   description: Técnica
