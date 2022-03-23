@@ -4,7 +4,7 @@ info:
   description: API encargada de resolver la integración con SAP para ventas.
   version: 1.0.0
 servers:
-  - url: ventas.tarjeta-copec-poc.svc.cluster.local
+  - url: http://ventas.tarjeta-copec-poc.svc.cluster.local:8080
 paths:
   /tarjetas-combustible:
     post:
