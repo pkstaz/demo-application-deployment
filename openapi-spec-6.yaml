@@ -285,23 +285,3 @@ components:
             It may or may not yield further information if dereferenced.
           type: string
           example: /account/12345/msgs/abc
-  securitySchemes:
-    api_key:
-      type: apiKey
-      name: api_key
-      in: header
-    basicAuth:
-      scheme: basic
-      type: http
-security:
-  -
-    api_key: []
-  -
-    basicAuth: []
-tags:
-  -
-    name: Tipo
-    description: TÃ©cnica
-  -
-    name: Estado
-    description: DiseÃ±o
