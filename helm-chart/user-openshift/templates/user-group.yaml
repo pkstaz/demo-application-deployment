@@ -1,0 +1,9 @@
+{{- range untilStep 1 101 1 }}
+{{ $n := . }}
+apiVersion: user.openshift.io/v1
+kind: Group
+metadata:
+  name: user{{$n}}
+users:
+  - user{{$n}}
+{{- end }}
