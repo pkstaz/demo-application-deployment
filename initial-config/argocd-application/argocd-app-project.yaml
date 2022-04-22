@@ -12,5 +12,3 @@ spec:
     path: helm-chart/argocd-app-project
     repoURL: 'https://github.com/pkstaz/demo-application-deployment.git'
     targetRevision: develop
-
-    kustomize: {}
