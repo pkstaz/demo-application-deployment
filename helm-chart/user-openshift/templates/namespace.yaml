@@ -3,5 +3,7 @@
 kind: Namespace
 apiVersion: v1
 metadata:
+  annotations:
+    openshift.io/requester: user{{ . }}
   name: user{{ . }}
 {{- end }}
