@@ -1,4 +1,4 @@
-{{- range untilStep 1 0 1 }}
+{{- range untilStep 1 101 1 }}
 {{ $n := . }}
 ---
 kind: Namespace
