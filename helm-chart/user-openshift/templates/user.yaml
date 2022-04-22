@@ -1,0 +1,9 @@
+{{- range untilStep 1 101 1 }}
+kind: User
+apiVersion: user.openshift.io/v1
+metadata:
+  name: user{{ . }}
+identities:
+  - 'htpasswd_provider:user{{ . }}'
+groups: null
+{{- end }}
