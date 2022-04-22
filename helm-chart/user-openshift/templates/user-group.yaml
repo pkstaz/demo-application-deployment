@@ -8,3 +8,10 @@ metadata:
 users:
   - user{{$n}}
 {{- end }}
+---
+apiVersion: user.openshift.io/v1
+kind: Group
+metadata:
+  name: opentlc-mgr
+users:
+  - opentlc-mgr
