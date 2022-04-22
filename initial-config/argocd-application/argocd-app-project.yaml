@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: api-manager
+  name: argocd-app-project
   namespace: openshift-gitops
 spec:
   destination:
