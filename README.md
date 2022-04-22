@@ -9,5 +9,7 @@
 3. [Instalar ArgoCD](./operators/gitops/README.md)
 4. Aplicar Configuracion Inicial
     ```bash
-    oc apply -f ./initial-config
+    oc apply -f ./initial-config/namespace
+    oc apply -f ./initial-config/role-binding
+    oc apply -f ./initial-config/argocd-application
     ```
