@@ -1,0 +1,7 @@
+{{- range untilStep 1 101 1 }}
+---
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: user{{ . }}
+{{- end }}
