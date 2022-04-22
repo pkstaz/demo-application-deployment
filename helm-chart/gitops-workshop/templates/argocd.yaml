@@ -9,6 +9,7 @@ metadata:
       controller: true
       kind: GitopsService
       name: cluster
+      uid: dda440ff-8091-49f8-8655-8c629a97c90b
   finalizers:
     - argoproj.io/finalizer
 spec:
