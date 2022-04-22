@@ -1,9 +1,10 @@
-{{- range untilStep 1 101 1 }}
+{{- range untilStep 1 0 1 }}
+{{ $n := . }}
 ---
 kind: Namespace
 apiVersion: v1
 metadata:
   annotations:
-    openshift.io/requester: user{{ . }}
-  name: user{{ . }}
+    openshift.io/requester: user{{$n}}
+  name: user{{$n}}
 {{- end }}
