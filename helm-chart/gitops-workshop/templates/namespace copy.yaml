@@ -1,4 +1,4 @@
-{{- range untilStep 1 (int .Values.LastUser) 1 }}
+{{- range untilStep 1 (int .Values.LastUser) (int .Values.Interval) }}
 {{ $n := . }}
 ---
 kind: Namespace

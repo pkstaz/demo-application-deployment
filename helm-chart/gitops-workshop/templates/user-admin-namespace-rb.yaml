@@ -1,4 +1,4 @@
-{{- range untilStep 1 101 1 }}
+{{- range untilStep (int .Values.FirstUser) (int .Values.LastUser) (int .Values.Interval) }}
 {{ $n := . }}
 ---
 kind: RoleBinding
