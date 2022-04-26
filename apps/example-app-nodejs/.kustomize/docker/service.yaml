@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: example-app-nodejs-docker
-  namespace: demo-application-deployment
+  namespace: user1-petclinic
 spec:
   selector:
     app: example-app-nodejs-docker
