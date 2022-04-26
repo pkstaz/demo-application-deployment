@@ -2,7 +2,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   name: example-app-nodejs-docker
-  namespace: demo-application-deployment
+  namespace: user1-petclinic
 spec:
   host: example-app-nodejs-docker-demo-application-deployment.apps.cluster-rflkz.rflkz.sandbox998.opentlc.com
   port:
