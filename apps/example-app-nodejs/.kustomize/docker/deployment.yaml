@@ -2,7 +2,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: example-app-nodejs-docker
-  namespace: demo-application-deployment
+  namespace: user1-petclinic
   labels:
     app: example-app-nodejs-docker
     app.kubernetes.io/component: example-app-nodejs-docker
