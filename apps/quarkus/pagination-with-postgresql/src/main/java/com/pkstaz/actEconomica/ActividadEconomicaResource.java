@@ -1,4 +1,4 @@
-package com.pkstaz;
+package com.pkstaz.actEconomica;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -12,7 +12,7 @@ import org.jboss.resteasy.annotations.jaxrs.PathParam;
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 import io.quarkus.hibernate.orm.panache.PanacheQuery;
 import io.quarkus.panache.common.Page;
-@Path("/recursos/v1/carpeta.tributaria/{id}/actividades_economicas/")
+@Path("/recursos/v1/carpeta.tributaria/actividades_economicas/")
 @Produces("application/json")
 @Consumes("application/json")
 public class ActividadEconomicaResource {

@@ -1,14 +1,16 @@
-package com.pkstaz;
+package com.pkstaz.actEconomica;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
-import io.quarkus.hibernate.orm.panache.PanacheEntity;
+import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 
 @Entity
 @Table(name="ctpm_act_eco")
-public class ActividadEconomica extends PanacheEntity{
+public class ActividadEconomica extends PanacheEntityBase{
+    @Id
     @Column(name="act_codigo")
     public String codigo;
 

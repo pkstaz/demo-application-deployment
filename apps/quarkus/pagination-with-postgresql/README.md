@@ -63,5 +63,14 @@ podman pull postgres
 ```
 
 ```
-podman run --name myPostgresDb -p 5432:5432 -e POSTGRES_USER=postgresql -e POSTGRES_PASSWORD=redhat -e POSTGRES_DB=postgresdb -d postgres
+podman run --name my-postgres-db -p 5432:5432 -e POSTGRES_USER=postgresql -e POSTGRES_PASSWORD=redhat -e POSTGRES_DB=postgresdb -d postgres
+```
+
+```
+mvn compile quarkus:dev
+```
+
+
+```
+mvn package oc:build oc:resource oc:deploy -Popenshift
 ```
