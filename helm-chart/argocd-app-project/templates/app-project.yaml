@@ -1,0 +1,9 @@
+{{- range untilStep 1 101 1 }}
+---
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: "user{{ . }}"
+  namespace: openshift-gitops
+spec: {}
+{{- end }}

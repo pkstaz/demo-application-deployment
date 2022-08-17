@@ -9,5 +9,5 @@
 3. [Instalar ArgoCD](./operators/gitops/README.md)
 4. Aplicar Configuracion Inicial
     ```bash
-    oc apply -f ./initial-config
+    oc apply -f ./initial-config/initial-config.yaml
     ```

@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argocd-app-project
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: openshift-gitops
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    path: helm-chart/argocd-app-project
+    repoURL: 'https://github.com/pkstaz/demo-application-deployment.git'
+    targetRevision: develop

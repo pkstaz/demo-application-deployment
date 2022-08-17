@@ -1,0 +1,18 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+# Namespeces para los diferentes proyectos
+- namespace/camel-k-example-ns.yaml
+- namespace/demo-application-deployment-ns.yaml
+- namespace/rhi-3scale-ns.yaml
+# Role Binding que permite que ArgCD escriba sobre los proyectos.
+- role-binding/camel-k-example-rb.yaml
+- role-binding/demo-application-deployment-rb.yaml
+- role-binding/rhi-3scale-rb.yaml
+# Application en ArgoCD
+- argocd-application/argocd-api-manager.yaml
+- argocd-application/argocd-api-products.yaml
+- argocd-application/argocd-app-project.yaml
+- argocd-application/argocd-example-app-nodejs-docker.yaml
+- argocd-application/argocd-example-app-nodejs-quay.yaml
+- argocd-application/argocd-example-camel-k.yaml

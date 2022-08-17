@@ -1,0 +1,72 @@
+drop table ctpm_act_eco;
+create table ctpm_act_eco (
+       act_codigo varchar(255) not null,
+        act_descripcion varchar(255),
+        act_dv varchar(255),
+        act_rut int4,
+        primary key (act_codigo, act_rut)
+);
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAA', 'TEST01', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAB', 'TEST02', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAC', 'TEST03', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAD', 'TEST04', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAE', 'TEST05', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAF', 'TEST06', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAG', 'TEST07', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAH', 'TEST08', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAI', 'TEST09', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAJ', 'TEST10', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAK', 'TEST11', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAL', 'TEST12', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAM', 'TEST13', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAN', 'TEST14', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAO', 'TEST15', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAP', 'TEST16', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAQ', 'TEST17', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAR', 'TEST18', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAS', 'TEST19', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAT', 'TEST20', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAU', 'TEST21', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAV', 'TEST22', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAW', 'TEST23', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAX', 'TEST24', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAY', 'TEST25', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('AAZ', 'TEST26', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABA', 'TEST27', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABB', 'TEST28', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABC', 'TEST29', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABD', 'TEST30', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABE', 'TEST31', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABF', 'TEST32', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABG', 'TEST33', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABH', 'TEST34', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABI', 'TEST35', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABJ', 'TEST36', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABK', 'TEST37', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABL', 'TEST38', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABM', 'TEST39', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABN', 'TEST40', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABO', 'TEST41', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABP', 'TEST42', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABQ', 'TEST43', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABR', 'TEST44', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABS', 'TEST45', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABT', 'TEST46', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABU', 'TEST47', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABV', 'TEST48', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABW', 'TEST49', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABX', 'TEST50', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABY', 'TEST51', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ABZ', 'TEST52', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ACA', 'TEST53', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ACB', 'TEST54', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ACC', 'TEST55', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ACD', 'TEST56', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ACE', 'TEST57', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ACF', 'TEST58', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ACG', 'TEST59', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ACH', 'TEST60', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ACI', 'TEST61', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ACJ', 'TEST62', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ACK', 'TEST63', 11111111, '1');
+INSERT INTO public.ctpm_act_eco (act_codigo, act_descripcion, act_rut, act_dv) VALUES('ACL', 'TEST64', 11111111, '1');
