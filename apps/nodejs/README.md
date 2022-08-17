@@ -8,7 +8,7 @@ Iniciar contenedor en local
 podman run -p 8085:80 localhost/hello-world-nodejs
 ```
 
-Iniciar sesion en cluster de OCP
+Sino se ha iniciado sesion en OCP, se debe hacer login
 ```
 oc login...
 ```
