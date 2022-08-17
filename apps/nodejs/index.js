@@ -12,5 +12,5 @@ app.get('/example/message/get', function (req, res) {
 })
 
 var server = app.listen(port, function () {
-    console.log("Example app listening at http://%s:%s", "localhost", port)
+    console.log("Example app listening at http://%s:%s%s", "localhost", port, "/example/message/get")
 })
