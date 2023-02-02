@@ -6,7 +6,7 @@ var app = express();
 app.get('/example/message/get', function (req, res) {
     console.log("Consuming method: /example/message/get")
     res.statusCode = 200;
-    res.statusMessage = "Successful"
+    res.statusMessage = "Successful OK!!!"
     const msg = 'Hello World!\n'
     res.end(msg);
 })
