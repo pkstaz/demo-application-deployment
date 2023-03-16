@@ -5,7 +5,7 @@ metadata:
   namespace: rhi-3scale
 spec:
   # Dont forget changed this!!!!
-  wildcardDomain: apps.cluster-rflkz.rflkz.sandbox998.opentlc.com
+  wildcardDomain: apps.cluster-zd8jj.zd8jj.sandbox1545.opentlc.com
   ###
   resourceRequirementsEnabled: false
   monitoring:
