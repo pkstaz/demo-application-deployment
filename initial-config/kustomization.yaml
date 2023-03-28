@@ -13,6 +13,6 @@ resources:
 - argocd-application/argocd-api-manager.yaml
 - argocd-application/argocd-api-products.yaml
 - argocd-application/argocd-app-project.yaml
-- argocd-application/argocd-example-app-nodejs-docker.yaml
-- argocd-application/argocd-example-app-nodejs-quay.yaml
-- argocd-application/argocd-example-camel-k.yaml
+- argocd-application/argocd-app-nodejs-docker.yaml
+- argocd-application/argocd-app-nodejs-quay.yaml
+- argocd-application/argocd-camel-k.yaml
