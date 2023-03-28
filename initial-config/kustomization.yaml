@@ -15,4 +15,4 @@ resources:
 - argocd-application/argocd-app-project.yaml
 - argocd-application/argocd-app-nodejs-docker.yaml
 - argocd-application/argocd-app-nodejs-quay.yaml
-- argocd-application/argocd-camel-k.yaml
+- argocd-application/argocd-app-camel-k.yaml
