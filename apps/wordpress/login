@@ -1,0 +1,10 @@
+export OPENSHIFT_USER=
+
+oc new-app mariadb-ephemeral
+
+OCP_REGISTRY_URL=$(oc get is wordpress -o jsonpath='{.status.publicDockerImageRepository}') 
+
+podman login \
+    ${OCP_REGISTRY_URL} \
+    --username %OPENSHIFT_USER% \
+    --password "$(oc whoami -t)" 
