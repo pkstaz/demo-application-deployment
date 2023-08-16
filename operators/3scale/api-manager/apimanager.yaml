@@ -5,7 +5,9 @@ metadata:
   namespace: rhi-3scale
 spec:
   # Dont forget changed this!!!!
-  wildcardDomain: apps.cluster-zd8jj.zd8jj.sandbox1545.opentlc.com
+
+  wildcardDomain: REPLACE_ME
+
   ###
   resourceRequirementsEnabled: false
   monitoring:

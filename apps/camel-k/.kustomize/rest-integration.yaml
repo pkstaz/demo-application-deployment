@@ -20,7 +20,7 @@ spec:
                 from("direct:hello")
                     .setHeader(Exchange.CONTENT_TYPE, constant("text/plain"))
                     .log("Hello World")
-                    .transform().simple("Hello World");
+                    .transform().simple("Hello World 2");
             }
         }
       name: Rest.java
