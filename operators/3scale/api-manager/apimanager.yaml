@@ -5,7 +5,9 @@ metadata:
   namespace: rhi-3scale
 spec:
   # Dont forget changed this!!!!
-  wildcardDomain: apps.rosa-q9z5x.vurt.p1.openshiftapps.com
+
+  wildcardDomain: REPLACE_ME
+
   ###
   resourceRequirementsEnabled: false
   monitoring:
