@@ -40,3 +40,16 @@ podman login \
     --password "$(oc whoami -t)" 
 ```
 
+
+
+### Delete Demo
+
+oc delete is wordpress
+oc delete bc wordpress
+oc delete deployment wordpress
+oc delete svc wordpress
+
+oc delete dc mariadb
+oc delete svc mariadb
+oc delete secret mariadb
+
