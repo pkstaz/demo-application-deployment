@@ -46,7 +46,7 @@ oc create secret generic wordpress-config --from-literal=DB_NAME=$DB_NAME --from
 oc new-app php~https://github.com/pkstaz/demo-application-deployment --context-dir=apps/wordpress/base --name wordpress
 ```
 
-Link secret to deploy in deployment details
+### Link secret to deploy in deployment details
 
 ![Link secret to deploy in deployment details](resources/image.png)
 
