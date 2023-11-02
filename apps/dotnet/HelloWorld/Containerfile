@@ -1,13 +1,6 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
-WORKDIR /src
-COPY HelloWorld.csproj .
-RUN dotnet restore
-COPY . .
-RUN dotnet publish -c release -o /app
+FROM registry.access.redhat.com/ubi8/dotnet-60-runtime:6.0-42
+COPY ./bin/release/net6.0/publish/ /app
 
-FROM mcr.microsoft.com/dotnet/aspnet:6.0
-WORKDIR /app
-EXPOSE 80
+EXPOSE 8080
 EXPOSE 443
-COPY --from=build /app .
-ENTRYPOINT ["dotnet", "HelloWorld.dll"]
+CMD ["dotnet", "/app/HelloWorld.dll"]

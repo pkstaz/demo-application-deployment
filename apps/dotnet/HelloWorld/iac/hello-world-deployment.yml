@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+# apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: hello-world
+spec:
+  selector:
+    matchLabels:
+      app: hello-world
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: hello-world
+    spec:
+      # volumes:
+      #   - name: hello-world-storage
+      #     persistentVolumeClaim:
+      #       claimName: hello-world-pvc
+      containers:
+        - image: quay.io/cestayg/hello-world-dotnet:dev
+          name: hello-world-dotnet
+          ports:
+            - containerPort: 8080
+              name: serve
+          # volumeMounts:
+          #   - name:  hello-world-storage
+          #     mountPath: /app/files
