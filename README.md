@@ -11,5 +11,3 @@
     ```bash
     oc apply -f ./initial-config/initial-config.yaml
     ```
-
-
